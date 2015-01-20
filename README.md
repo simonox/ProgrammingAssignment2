@@ -103,3 +103,21 @@ In order to complete this assignment, you must do the following:
 ### Grading
 
 This assignment will be graded via peer assessment.
+
+### Using it
+
+	> source('cachematrix.R')
+	> c=rbind(c(1, -1/4), c(-1/4, 1)) ## create a matrix
+	> cc <- makeCacheMatrix(c) ## create a cache matrix
+	> cacheSolve(cc) ## uncached
+        	  [,1]      [,2]
+	[1,] 1.0666667 0.2666667
+	[2,] 0.2666667 1.0666667
+
+	> cacheSolve(cc)
+	found cached inverse matrix
+    	      [,1]      [,2]
+	[1,] 1.0666667 0.2666667
+	[2,] 0.2666667 1.0666667
+   
+ 
