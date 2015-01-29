@@ -2,7 +2,7 @@
 ## This special matrix has an internal cache "i" to do this.
 ## There are three "methods" in this matrix:
 ## set(value) to set the value
-## get() to retrive the value
+## get() to retrieve the value
 ## setinverse(value) to fill the cache
 ## getinverse() to get data from cache
 makeCacheMatrix <- function(x = matrix()) {
